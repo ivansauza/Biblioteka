@@ -1,6 +1,6 @@
 ## Biblioteca
 
-Sistema de Biblioteca echo en Laravel 5.5 con modulos de:
+Sistema de Biblioteca hecho en Laravel 5.5 con modulos de:
 
 - Proveedores
 - Compras
@@ -12,7 +12,7 @@ Sistema de Biblioteca echo en Laravel 5.5 con modulos de:
 - Empleados
 - Usuarios
 
-A si mismo incluye dos dashboard uno para administradores y otro para usuarios en donde podra ver el estado de los prestamos.
+A si mismo incluye dos dashboard uno para administradores y otro para usuarios en donde podrá ver el estado de los prestamos.
 
 ## ER
 
