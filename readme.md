@@ -14,6 +14,10 @@ Sistema de Biblioteca echo en Laravel 5.5 con modulos de:
 
 A si mismo incluye dos dashboard uno para administradores y otro para usuarios en donde podra ver el estado de los prestamos.
 
+## ER
+
+<img src="https://www.dropbox.com/s/ncro6kvrdb2v16k/Diagrama%20ER.jpg?raw=1">
+
 ## Frameworks y Librerias usadas
 
 - [Laravel 5.5] https://github.com/laravel/laravel
@@ -37,5 +41,7 @@ A si mismo incluye dos dashboard uno para administradores y otro para usuarios e
 <img src="https://www.dropbox.com/s/7i4rlr13lrpo6xz/5.PNG?raw=1">
 
 <img src="https://www.dropbox.com/s/zyks431m6m09qua/6.PNG?raw=1">
+
+<img src="https://www.dropbox.com/s/o7o9we86x44gv7q/7.PNG?raw=1">
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
