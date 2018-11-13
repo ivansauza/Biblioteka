@@ -1,0 +1,82 @@
+@extends('layouts.admin')
+
+@section('css')
+	<link rel="stylesheet" type="text/css" href="{{ asset('styles/dataTables.min.css') }}">
+@endsection
+
+@section('content')
+	<div class="row">
+		<div class="col">
+			<a href="{{ route('admin.inventarios.create') }}" 
+				class="btn btn-success mb-5">
+				Crear Inventario
+
+			</a>
+		</div>
+	</div>
+
+	@if($errors->any())
+		<div class="alert alert-danger" role="alert">
+		  {{ $errors->first() }}
+		</div>
+	@endif
+
+	<div class="row">
+	@foreach( $inventarios as $inventario )
+		<div class="col-md-12">
+			<div class="card border-primary	 mb-3">
+				<div class="card-header bg-transparent border-primary">
+					<strong>INVENTARIO</strong> : {{ $inventario->id }}
+
+					<span class="float-right">Feha de creación: {{ $inventario-> created_at }}</span>
+				</div>
+
+				<div class="card-body">
+					<h5 class="card-title">
+						Sucursal: {{ $inventario->biblioteca->nombre }}
+					</h5>
+
+					<table class="table" id="myTable">
+						<thead>
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">Titulo</th>
+								<th scope="col">ISB</th>
+								<th scope="col">Editorial</th>
+								<th scope="col">Existencia</th>
+								<th scope="col">Prestados</th>
+								<th scope="col">Disponibles</th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach( $inventario->libros as $libro )
+							<tr>
+								<td>{{ $libro->id }}</td>
+								<td>{{ $libro->titulo }}</td>
+								<td>{{ $libro->isbn }}</td>
+								<td>{{ $libro->editorial->nombre }}</td>
+								<td>{{ $libro->existencia }}</td>
+								<td>{{ $libro->getPrestados() }}</td>
+								<td>{{ $libro->getDisponibles() }}</td>
+							</tr>
+							@endforeach
+					</table>
+				</div>
+			</div>
+		</div>
+	@endforeach
+	</div>
+
+
+@endsection
+
+
+@section('javascript')
+	<script type="text/javascript" src="{{ asset('js/dataTables.min.js') }}"></script>
+@endsection
+
+@section('script')
+	$(document).ready( function () {
+		$('#myTable').DataTable();
+	} );
+@endsection
