@@ -12,17 +12,17 @@ Sistema de Biblioteca echo en Laravel 5.5 con modulos de:
 - Empleados
 - Usuarios
 
-A si mismo incluye dos paneles uno para administradores y otro para usuarios.
+A si mismo incluye dos dashboard uno para administradores y otro para usuarios en donde podra ver el estado de los prestamos.
 
-## Frameworks y Librerias
+## Frameworks y Librerias usadas
 
-- Laravel 5.5
-- Bootstrap 4
-- Bootstrap Select
-- DataTables
-- FontAwesome
-- Animate.css
-- Jquery
+- [Laravel 5.5] https://github.com/laravel/laravel
+- [Bootstrap 4] https://github.com/twbs/bootstrap
+- [Bootstrap Select] https://github.com/snapappointments/bootstrap-select
+- [DataTables] https://github.com/DataTables/DataTables
+- [FontAwesome] https://fontawesome.com/
+- [Animate.css] https://github.com/daneden/animate.css/
+- [Jquery] https://jquery.com/
 
 ## Capturas
 
